@@ -10,7 +10,7 @@ if(!nameofuser){
 
 }
 
-    var socket = io();
+    var socket = io("https://node-js-socket-io-drawingtool.vercel.app/");
     var canvas = document.getElementsByClassName('whiteboard')[0];
     var colors = document.getElementsByClassName('color');
     var context = canvas.getContext('2d');
