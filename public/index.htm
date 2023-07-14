@@ -4,21 +4,32 @@
     <meta charset="UTF-8" />
     <title>Socket.IO whiteboard</title>
     <link rel="stylesheet" href="index.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
   </head>
   <body>
     <canvas class="whiteboard"></canvas>
-
-    <div class="colors">
-      <div class="color black"></div>
-      <div class="color red"></div>
-      <div class="color green"></div>
-      <div class="color blue"></div>
-      <div class="color yellow"></div>
-      <div class="color pink"></div>
-      <div class="color purple"></div>
-      <div class="color orange"></div>
+    
+    <div class="control">
+      
+    <div class="colors m-2 ">
+      <div class="color black rounded "></div>
+      <div class="color red rounded"></div>
+      <div class="color green  rounded"></div>
+      <div class="color blue  rounded"></div>
+      <div class="color yellow  rounded"></div>
+      <div class="color pink  rounded"></div>
+      <div class="color purple  rounded"></div>
+      <div class="color orange  rounded"></div>
     </div>
+    
+    <div class="bg-white p-2 m-2 rounded">
 
+      <p>Thickness</p>
+      <input id="range" type="range"  min="1" max="10"/>
+    </div>
+    </div> 
+    
     <script src="../socket.io/socket.io.js"></script>
     <script src="./main.js"></script>
   </body>

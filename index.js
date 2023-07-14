@@ -8,7 +8,7 @@ const port = process.env.PORT || 3000;
 app.use(express.static(__dirname + '/public'));
 
 function onConnection(socket){
-    console.log("first")
+    console.log("an unknown user joined the server")
   socket.on('drawing', (data) => socket.broadcast.emit('drawing', data));
 }
 
